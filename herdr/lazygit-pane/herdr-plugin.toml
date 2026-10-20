@@ -1,0 +1,10 @@
+id = "local.lazygit-pane"
+name = "lazygit pane"
+description = "Opens lazygit in a pane on the right of every new workspace in a git repo"
+version = "0.1.0"
+min_herdr_version = "0.8.0"
+platforms = ["linux", "macos"]
+
+[[events]]
+on = "workspace.created"
+command = ["sh", "on-workspace-created.sh"]
